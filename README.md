@@ -41,7 +41,7 @@ Follow these steps to install the Cloud9 IDE using the script:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/priv8tools/cloud9-installer.git
+   git clone fajarfgcz/C9.git
    cd cloud9-installer
    
 
@@ -110,10 +110,9 @@ After installation, you’ll receive the following details:
 
 📬 Contact & Support
 
-Encountering issues or have suggestions? Reach out to the Priv8 Tools team:
-	•	Telegram: [@admpriv8tools](https://t.me/admpriv8tools)
-	•	Discord: [Join our Discord](https://discord.com/invite/c8vXSaCScq)
-	•	YouTube: [Priv8 Tools Channel](http://m.youtube.com/@c_priv8tools)
+Encountering issues or have suggestions?
+	•	Telegram: [@dominic7x](https://t.me/dominic7x)
+
 
 Happy coding! 🎉
 
