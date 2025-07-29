@@ -13,7 +13,7 @@ YELLOW="\033[1;33m"
 RED="\033[1;31m"
 
 print_message "$BLUE" "================================================="
-print_message "$GREEN" "🚀 Cloud9 Installation Script By Priv8 Tools 🌟"
+print_message "$GREEN" "🚀 Cloud9 Installation Script By SBH Tools 🌟"
 print_message "$BLUE" "================================================="
 
 print_message "$YELLOW" "🔍 Detecting Linux distribution..."
@@ -62,15 +62,15 @@ else
   exit 1
 fi
 
-USERNAME="kontol"
-PASSWORD="kontol"
+USERNAME="sbh"
+PASSWORD="sbh"
 
 print_message "$YELLOW" "🚀 Step 4: Running Cloud9 Server..."
 sudo docker run -d \
   --name=Priv8-Tools \
   -e USERNAME=$USERNAME \
   -e PASSWORD=$PASSWORD \
-  -p 8000:8000 \
+  -p 8080:8080 \
   lscr.io/linuxserver/cloud9:latest
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container is running with Jet Theme."
@@ -91,7 +91,7 @@ sudo docker exec Priv8-Tools /bin/bash -c "
   apt install php-curl -y && \
   cd /c9bins/.c9/ && \
   rm -rf user.settings && \
-  wget https://raw.githubusercontent.com/priv8-app/cloud9/refs/heads/main/user.settings
+  wget https://raw.githubusercontent.com/fajarfgcz/C9/refs/heads/main/user.settings
 "
 if [ $? -eq 0 ]; then
   print_message "$GREEN" "✅ Cloud9 container configured successfully."
@@ -121,7 +121,7 @@ fi
 print_message "$BLUE" "==========================================="
 print_message "$GREEN" "🎉 Cloud9 Setup Completed Successfully 🎉"
 print_message "$BLUE" "==========================================="
-print_message "$YELLOW" "🌟 Access Cloud9 at: http://$PUBLIC_IP:8000"
+print_message "$YELLOW" "🌟 Access Cloud9 at: http://$PUBLIC_IP:8080"
 print_message "$YELLOW" "🔑 Username: $USERNAME"
 print_message "$YELLOW" "🔑 Password: $PASSWORD"
 print_message "$YELLOW" "=========================================="
